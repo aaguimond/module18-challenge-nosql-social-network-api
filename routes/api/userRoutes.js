@@ -1,5 +1,7 @@
+// defining our router using express.js
 const router = require('express').Router();
 
+// importing our user route logic from userController.js
 const {
     getUsers,
     getSingleUser,
@@ -27,4 +29,5 @@ router.route('/:userId/friends/:friendId')
     .post(addFriend)
     .delete(removeFriend);
 
+// exporting our router
 module.exports = router;
