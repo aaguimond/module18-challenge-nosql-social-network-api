@@ -1,0 +1,24 @@
+{
+  "name": "nosql-social-network-api",
+  "version": "1.0.0",
+  "description": "MongoDB API for social network",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaguimond/module18-challenge-nosql-social-network-api.git"
+  },
+  "author": "aaguimond",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aaguimond/module18-challenge-nosql-social-network-api/issues"
+  },
+  "homepage": "https://github.com/aaguimond/module18-challenge-nosql-social-network-api#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.4.4"
+  }
+}
