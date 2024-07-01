@@ -6,7 +6,7 @@ const db = require('./config/connection');
 const routes = require('./routes');
 
 // defining our port
-const PORT = process.env.PORT || 3001;
+const PORT = 3001;
 // defining express as our app variable
 const app = express();
 

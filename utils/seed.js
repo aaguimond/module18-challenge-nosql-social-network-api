@@ -39,7 +39,9 @@ connection.once('open', async () => {
     }
 
     // Adding all users to the user collection
-    await User.collection.insertMany(users);
+    if (users.length > 0) {
+        await User.collection.insertMany(users);
+    }
 
     // create an empty array to hold the thoughts
     const thoughts = [];
@@ -60,7 +62,9 @@ connection.once('open', async () => {
     }
 
     // Adding thoughts to the thoughts collection
-    await Thought.collection.insertMany(thoughts);
+    if (thoughts.length > 0) {
+        await Thought.collection.insertMany(thoughts);
+    }
 
     // Adding thoughts to user data by iterating though thoughts table
     for (let i = 0; i < thoughts.length; i++) {
