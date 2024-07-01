@@ -9,7 +9,7 @@ const reactionSchema = new Schema(
         // Using mongoose's object ID function to assign each reaction an ID
         reactionId: {
             type: Schema.Types.ObjectId,
-            default: () => new Types.ObjectId,
+            default: () => new Types.ObjectId(),
         },
         // Defining the reaction body's attributes
         reactionBody: {

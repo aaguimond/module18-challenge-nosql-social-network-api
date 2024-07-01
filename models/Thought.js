@@ -28,7 +28,7 @@ const reactionSchema = new Schema({
         get: timestamp => dateFormat(timestamp),
     },
 }, {
-    toJson: {
+    toJSON: {
         getters: true,
     },
     id: false,

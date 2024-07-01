@@ -54,7 +54,7 @@ connection.once('open', async () => {
         const username = users[Math.floor(Math.random() * users.length)].username;
 
         // Adding each thought to the thoughts table
-        users.push({
+        thoughts.push({
             thoughtText,
             username,
             reactions: [],
